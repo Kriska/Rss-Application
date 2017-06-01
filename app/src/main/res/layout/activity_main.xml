@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="bg.uni_sofia.fmi.a81117.rssreader.MainActivity"
+    android:weightSum="100">
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="80">
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_weight="0.79"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+            <RadioButton
+                android:id="@+id/radioBtnApple"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Apple / Developer" />
+
+            <RadioButton
+                android:id="@+id/radioBtnAppleN"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Apple / Newsroom" />
+
+            <RadioButton
+                android:id="@+id/radioBtnJavaWrld"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Javaworld" />
+
+            <RadioButton
+                android:id="@+id/radioBtnFuturism"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Futurism" />
+
+            <RadioButton
+                android:id="@+id/radioBtnTchrchG"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Techchurch / Google" />
+
+            <RadioButton
+                android:id="@+id/radioBtnTchrchM"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Techchurch / Microsoft" />
+
+            <RadioButton
+                android:id="@+id/radioBtnTchrdG"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Techradar / Gaming" />
+
+            <RadioButton
+                android:id="@+id/radioBtnNew"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="NEW" />
+        </RadioGroup>
+    </ScrollView>
+
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_weight="20"
+        android:text="fetch" />
+</LinearLayout>
